@@ -1,0 +1,14 @@
+.demo {
+  font-size: 25px; 
+  color: red;
+  background-color: yellow;
+}
+
+.heading-title {
+  font-size: 40px !important;
+}
+
+.heading-title-2 {
+  color: green;
+  font-size: 60px;
+}
