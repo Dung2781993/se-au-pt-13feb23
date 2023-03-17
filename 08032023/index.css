@@ -52,7 +52,7 @@ span.c {
 /*Box model style*/
 .example-box-1 {
   display: block;
-  border: 1rem solid purple;
+  border: 1rem solid rgb(0, 128, 6);
   border-radius: 30%;
   padding: 1rem;
   margin: 10px;
@@ -66,7 +66,7 @@ span.c {
   margin-top: 10rem;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 600px) {
   .example-box-1 {
     display: block;
     border: 1rem solid yellow;
@@ -93,4 +93,45 @@ span.c {
   margin: 10px;
   padding: 20px;
   font-size: 30px;
+}
+
+/*Normal way*/
+/* .container-cover {
+  color: red;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+button {
+  background-color: #ffffff;
+  color: red;
+  border: 1px solid #1e90ff;
+  padding: 5px;
+} */
+
+/*Var  way*/
+:root {
+  --red-color: red;
+  --white: #ffffff;
+  --green-button: green;
+  --blue: blue;
+}
+
+.container-cover {
+  color: var(--red-color);
+  background-color: var(--white);
+  padding: 15px;
+}
+
+button {
+  background-color: var(--white);
+  color: var(--green-button);
+  border: 1px solid var(--blue);
+  padding: 5px;
+}
+
+.container-cover-2 {
+  color: var(--red-color);
+  background-color: var(--white);
+  padding: 15px;
 }
