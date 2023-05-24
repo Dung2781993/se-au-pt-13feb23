@@ -1,0 +1,16 @@
+{
+  "name": "webapi",
+  "version": "1.0.0",
+  "description": "Example of the web api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "save": "^2.9.0"
+  }
+}
