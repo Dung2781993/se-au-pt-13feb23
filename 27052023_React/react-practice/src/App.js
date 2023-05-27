@@ -31,6 +31,9 @@ function App() {
   const [value, setValue] = useState("");
   const [name, setName] = useState("");
 
+  const [number1, setNumber1] = useState();
+  const [number2, setNumber2] = useState();
+  const [total, setTotal] = useState(0);
   return (
     <div className="App">
       <div>
@@ -52,6 +55,15 @@ function App() {
           onChange={(e) => setName(e.target.value)}
         />
         <button>Submit</button>
+      </div>
+      {/* //Adding two number */}
+      <div>
+        <h2>Adding Two Numbers</h2>
+        <input placeholder="First Number" type="number" />
+        <input placeholder="Second Number" type="number" />
+
+        <button>Add Two Numbers</button>
+        <p>Total:</p>
       </div>
       <div>
         <button onClick={() => setShow(!isShow)}>
