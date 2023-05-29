@@ -1,5 +1,6 @@
 class Operation {
-  constructor() {}
+  constructor() {
+  }
   addition(num1, num2) {
     return num1 + num2;
   }
