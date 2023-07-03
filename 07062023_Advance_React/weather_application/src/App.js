@@ -5,6 +5,7 @@ import Emoji from './components/Emoji';
 import Clock from './components/Clock';
 import Calculator from './components/Calculator';
 import { useState } from 'react';
+import Button from '@mui/material/Button';
 
 const happy = '😄';
 const sad = '😢';
@@ -21,9 +22,7 @@ const App = () => {
     <div>
       <div>
         <Emoji symbol={mood} label="mood" />
-        <button onClick={toggleMood}>
-          Change Mood
-        </button>
+        <Button onClick={toggleMood} variant="contained">Change Mood</Button>
       </div>
 
       <br />
